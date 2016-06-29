@@ -130,6 +130,10 @@ class ViewController: UIViewController {
     }
     @IBAction func dot(sender: AnyObject) {
         x.text=x.text!+"."
+        if(x.text!=="."){
+            x.text=x.text!+"error"
+            x.text!=""
+        }
     }
 }
 
